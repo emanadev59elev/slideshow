@@ -1,0 +1,357 @@
+* {
+  margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #202020;
+  height: 100px;
+}
+
+h1 {
+  color: lime;
+}
+
+h1 span {
+  color: aliceblue;
+  font-family: cursive;
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+nav ul li {
+  font-family: cursive;
+  color: coral;
+  list-style: none;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/*****/
+.liHover {
+  font-family: cursive;
+  list-style: none;
+  padding: 5px;
+  border-radius: 50px;
+  background: rgb(50 80 50/.8);
+  color: firebrick;
+  font-size: 18px;
+  transition: all 1s;
+}
+
+section {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+  padding: 10px;
+  transition: all 1s;
+  position: relative;
+}
+
+section div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: all 3s;
+  animation: abrir 500ms linear;
+  position: relative;
+}
+
+@keyframes abrir {
+  0% {
+    width: 1%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+section .home {
+  background: #505050;
+}
+
+section .movies {
+  background: #505080;
+}
+
+section .series {
+  background: #508050;
+}
+
+section .about {
+  background: #805050;
+}
+
+section div ul {
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 0px;
+}
+
+section div ul li {
+  height: 10%;
+  width: 80%;
+}
+
+section .comentar {
+  height: 100%;
+  position: relative;
+}
+
+section .comentar p {
+  font-size: 10px;
+}
+
+section .comentar button {
+  width: 22%;
+  height: 100%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  background: coral;
+  border: none;
+  color: aliceblue;
+  font-weight: 800;
+}
+
+section .comentar input {
+  width: 68%;
+  height: 50%;
+  padding: 8px;
+  border: none;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+section .partilhar div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+section .partilhar img {
+  height: 100%;
+  width: 100%;
+}
+
+section .partilhar img {
+  height: 100%;
+  width: 100%;
+}
+
+section .partilhar .link_facebook {
+  background: linear-gradient(to top, rgb(200 200 200), rgb(100 100 200));
+  border-radius: 50px;
+}
+
+.container {
+  position: relative;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.folha {
+  width: 95%;
+  height: 400px;
+  border: 1px solid #000;
+  background-image: url("/img/InShot_20231004_235226175.jpg");
+  background-size: cover;
+  background-position: -33px 0px;
+  background-repeat: no-repeat;
+  transition: all 500ms;
+}
+
+.comando {
+  width: 340px;
+  height: 80px;
+  border: 1px solid #000;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  background: #202020;
+}
+
+.Btn_criar {
+  background-color: darkgreen;
+  width: 100%;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  color: deepskyblue;
+}
+
+.Btn_comecar {
+  background-color: lightskyblue;
+  width: 100%;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  color: darkcyan;
+}
+
+.btn p {
+  align-self: center;
+}
+
+.entrada_img {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid aliceblue;
+  border-radius: 20px;
+  outline: none;
+}
+
+dialog {
+  width: 85%;
+  left: 3%;
+  height: 85%;
+  position: absolute;
+  border: 1px solid #000;
+  top: 2%;
+  text-align: center;
+  border: 2px solid deepskyblue;
+  border-radius: 10px;
+  background-color: rgb(60, 60, 100);
+}
+
+dialog::backdrop {
+  background-color: rgb(30 30 30/.8);
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+}
+
+.img {
+  width: 80%;
+  height: 200px;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+h3,
+h4 {
+  margin: 2px;
+  color: #202020;
+}
+
+dialog h3 {
+  text-transform: uppercase;
+}
+
+div {
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+em {
+  color: aliceblue;
+}
+
+.info{
+  color: #202020;
+}
+
+
+.link_group {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-evenly;
+}
+
+.link {
+  height: 100%;
+  width: 20%;
+}
+
+
+/******Responsividade******/
+
+@media screen and (min-width: 768px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .container_search {
+    width: 50%;
+    top: 20%;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  .container {
+    width: 80%;
+    height: 500px;
+  }
+
+  .folha {
+    background-position: 0px 0px;
+  }
+
+  dialog {
+    top: 10%;
+    width: 600px;
+    height: 500px;
+    left: 20%;
+  }
+
+  .dialog_comand {
+    display: flex;
+  }
+  section{
+    width: 50%;
+  }
+}
+
+summary {
+  color: aliceblue;
+}
+
+input {
+  outline: none;
+}

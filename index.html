@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Emana<span>slideShow</span></h1>
+    <nav>
+      <ul>
+        <li class="comentar">Comentar</li>
+        <li class="partilhar">Partilhar</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    
+    <div class="comentar" hidden>
+      <input type="text" id="comentario" placeholder="Escreva o seu comentário">
+      <button>Enviar</button>
+    </div>
+    
+    <div class="partilhar" hidden>
+      <div>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://emanadev59elev.github.io/slideshow" class="link_facebook">
+          <img src="/links/facebook.png" alt="/links/facebook.png">
+        </a>
+        <a href="whatsapp://send?text=acess - https://emanuelvenancio.github.io/slideshow">
+          <img src="/links/whatsapp.gif" alt="/links/whatsapp.gif">
+        </a>
+      </div>
+    </div>
+    
+  </section>
+
+
+
+  <h4 class="info"></h4>
+  <div class="container">
+    <div class="folha">
+
+    </div>
+    <div class="comando">
+      <div class="btn Btn_criar">
+        <p class="Btn_criar">Criar</p>
+      </div>
+      <div class="btn Btn_comecar">
+        <p class="Btn_comecar">Começar</p>
+      </div>
+    </div>
+  </div>
+
+  <dialog>
+
+    <h3>Criar novo slide</h3>
+    <em class="info"></em>
+    <br>
+    <div class="img"></div>
+    <br>
+    <em>Escolha uma imagem</em>
+    <input type="file" class="entrada_img"><br>
+    <br>
+    <details>
+      <summary>
+        Escolher música de fundo
+      </summary>
+      <ul>
+        <li id="/sounds/Assunto_particular.mp3">Assunto Particular</li>
+        <li id="/sounds/instrumental.mp3">Beat R&B</li>
+        <li id="/sounds/manda_lixar.mp3">Mobbers_ft_Tennaz</li>
+        <li id="/sounds/ta_tudo_bem.mp3">Toy Toy</li>
+      </ul>
+    </details>
+    <br>
+
+    <div class="dialog_comand">
+      <button class="add">Add</button><br><br>
+      <button class="fechar">Terminar</button>
+    </div>
+
+  </dialog>
+
+</body>
+<script src="main.js"></script>
+
+</html>
